@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qpr-Fb-LzH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="kEa-bo-axh">
+            <objects>
+                <viewController id="qpr-Fb-LzH" customClass="GameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZbY-Ch-pu8"/>
+                        <viewControllerLayoutGuide type="bottom" id="PSq-5T-Yei"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PgE-ON-WSi" customClass="GradientView">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="BackgroundPattern" translatesAutoresizingMaskIntoConstraints="NO" id="uLM-7P-5fD">
+                                <frame key="frameInset"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ab-YD-FXB">
+                                <subviews>
+                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Zm-mL-Cq3" customClass="SKView">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="351" placeholder="YES" id="Cey-gR-Dv5"/>
+                                            <constraint firstAttribute="height" constant="351" placeholder="YES" id="Ph4-jn-1j2"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allowsTransparency" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="7Zm-mL-Cq3" firstAttribute="centerX" secondItem="3ab-YD-FXB" secondAttribute="centerX" placeholder="YES" id="Zjl-xU-wne"/>
+                                    <constraint firstItem="7Zm-mL-Cq3" firstAttribute="centerY" secondItem="3ab-YD-FXB" secondAttribute="centerY" placeholder="YES" id="tnD-WU-Kek"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.77059151790000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3ab-YD-FXB" firstAttribute="top" secondItem="PgE-ON-WSi" secondAttribute="top" priority="250" id="1IN-9S-Eef"/>
+                            <constraint firstAttribute="bottom" secondItem="3ab-YD-FXB" secondAttribute="bottom" priority="250" id="HDN-Eo-neJ"/>
+                            <constraint firstItem="3ab-YD-FXB" firstAttribute="leading" secondItem="PgE-ON-WSi" secondAttribute="leading" constant="20" id="WJY-tK-mfC"/>
+                            <constraint firstAttribute="trailing" secondItem="3ab-YD-FXB" secondAttribute="trailing" constant="20" id="nE9-oC-ekm"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="gameContainer" destination="7Zm-mL-Cq3" id="JgK-8A-gzX"/>
+                        <outlet property="safeArea" destination="3ab-YD-FXB" id="KWP-kV-Dl3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZML-wN-6HX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898.24218749999989" y="-353.14787701317715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackgroundPattern" width="1366" height="1024"/>
+    </resources>
+</document>

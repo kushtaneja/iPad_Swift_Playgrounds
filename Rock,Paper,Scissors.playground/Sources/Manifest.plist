@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Version</key>
+	<string>1.0</string>
+	<key>ContentVersion</key>
+	<string>1.0</string>
+	<key>Name</key>
+	<string>Rock, Paper, Scissors</string>
+	<key>Description</key>
+	<string>Rock, Paper, Scissors (Roshambo!)</string>
+	<key>ContentIdentifier</key>
+	<string>com.apple.playgrounds.rockpaperscissors</string>
+	<key>DeploymentTarget</key>
+	<string>ios10.0</string>
+	<key>ImageReference</key>
+	<string>banner.png</string>
+	<key>Chapters</key>
+	<array>
+		<string>Document1.playgroundchapter</string>
+		<string>Document2.playgroundchapter</string>
+	</array>
+</dict>
+</plist>
